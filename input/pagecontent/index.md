@@ -1,7 +1,7 @@
 <a id="readme-top"></a>
 <div align="center">
   <h2>Fiji Core FHIR IG</h2>
-  <h4>FSH Code Package for Fiji Core FHIR Implementation Guide</h4>
+  <h4>FSH Code Package for Fiji Core FHIR Implementation Guide - Initial State</h4>
 </div>
 
 
