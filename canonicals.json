@@ -1,0 +1,70 @@
+[{
+  "id" : "fiji.core.ig",
+  "type" : "ImplementationGuide",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/ImplementationGuide/fiji.core.ig",
+  "version" : "1.0.0",
+  "name" : "FijiCoreIG"
+},
+{
+  "id" : "FijiAllergyIntolerance",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiAllergyIntolerance",
+  "version" : "1.0.0",
+  "name" : "FijiAllergyIntolerance"
+},
+{
+  "id" : "FijiCondition",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiCondition",
+  "version" : "1.0.0",
+  "name" : "FijiCondition"
+},
+{
+  "id" : "FijiOrganization",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiOrganization",
+  "version" : "1.0.0",
+  "name" : "FijiOrganization"
+},
+{
+  "id" : "fiji-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-patient",
+  "version" : "1.0.0",
+  "name" : "FijiPatient"
+},
+{
+  "id" : "fiji-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-practitioner",
+  "version" : "1.0.0",
+  "name" : "FijiPractitioner"
+},
+{
+  "id" : "fiji-practitioner-role",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-practitioner-role",
+  "version" : "1.0.0",
+  "name" : "FijiPractitionerRole"
+},
+{
+  "id" : "pacific-address-island",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-address-island",
+  "version" : "1.0.0",
+  "name" : "PacificAddressIsland"
+},
+{
+  "id" : "pacific-address-village",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-address-village",
+  "version" : "1.0.0",
+  "name" : "PacificAddressVillage"
+},
+{
+  "id" : "pacific-clan-affiliation",
+  "type" : "StructureDefinition",
+  "url" : "https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-clan-affiliation",
+  "version" : "1.0.0",
+  "name" : "PacificClanAffiliation"
+}]

@@ -1,0 +1,95 @@
+FijiCoreIG : Validation Results
+=========================================
+
+err = 5, warn = 22, info = 24
+IG Publisher Version: 2.1.2
+Generated Thu Mar 05 23:03:38 UTC 2026. FHIR version 4.3.0 for fiji.core.ig#1.0.0 (canonical = https://healthinfoservices.net/fiji-core-ig)
+ Build Errors : 4 / 6 / 0
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/ImplementationGuide-fiji.core.ig : 1 / 1 / 1
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Organization-PacificHospitalExample : 0 / 1 / 1
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Patient-PacificPatientExample1 : 0 / 0 / 3
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Patient-PacificPatientExample2 : 0 / 0 / 3
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Patient-PacificPatientFijiITaukei : 0 / 1 / 3
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Patient-PacificPatientFijiIndo : 0 / 1 / 2
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/Practitioner-PacificPractitionerExample : 1 / 1 / 2
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/PractitionerRole-PacificPractitionerRoleExample : 0 / 0 / 2
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-FijiAllergyIntolerance : 0 / 1 / 4
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-FijiCondition : 0 / 1 / 3
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-FijiOrganization : 0 / 2 / 3
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-fiji-patient : 0 / 1 / 5
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner : 0 / 1 / 2
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner-role : 0 / 2 / 4
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-pacific-address-island : 0 / 1 / 1
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-pacific-address-village : 0 / 1 / 1
+ /home/runner/work/fiji-core-ig/fiji-core-ig/fsh-generated/resources/StructureDefinition-pacific-clan-affiliation : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: ImplementationGuide/fiji.core.ig: This IG is version 4.3.0, while the IG 'hl7.terminology.r4' is from version 4.0.1
+ERROR: ImplementationGuide/fiji.core.ig: This IG is version 4.3.0, while the IG 'hl7.fhir.uv.extensions.r4' is from version 4.0.1
+ERROR: ImplementationGuide/fiji.core.ig: This IG is version 4.3.0, while the IG 'hl7.fhir.uv.tools.r4' is from version 4.0.1
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacificPatientExample1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PacificPatientExample2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: gettingstarted.html#/html/body/div/div/div/div/div/div/a/img at Line 156, column 61: The image source 'docimg/logo extended.png' cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-fiji.core.ig.json ==
+WARNING: ImplementationGuide/fiji.core.ig: ImplementationGuide.dependsOn[0]: The ImplementationGuide is based on FHIR version 4.3.0 but package hl7.terminology.r4#7.0.1 is based on FHIR version 4.0.1. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+ERROR: ImplementationGuide/fiji.core.ig: ImplementationGuide.dependsOn[1]: The canonical URL http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions points to the package hl7.fhir.uv.extensions which is inconsistent with the stated packageId of hl7.fhir.uv.extensions.r4
+== fsh-generated/resources/Organization-PacificHospitalExample.json ==
+WARNING: Organization/PacificHospitalExample: Organization.identifier[0].system: No definition could be found for URL value 'http://health.gov.fj/fhir/identifier/organization'
+== fsh-generated/resources/Patient-PacificPatientExample1.json ==
+INFORMATION: Patient/PacificPatientExample1: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/div/p/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+INFORMATION: Patient/PacificPatientExample1: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-clan-affiliation.html' at 'div/table/tr/td/a' for 'Pacific Clan Affiliation' is not a widely supported protocol and should be checked
+== fsh-generated/resources/Patient-PacificPatientExample2.json ==
+INFORMATION: Patient/PacificPatientExample2: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/div/p/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+INFORMATION: Patient/PacificPatientExample2: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-clan-affiliation.html' at 'div/table/tr/td/a' for 'Pacific Clan Affiliation' is not a widely supported protocol and should be checked
+== fsh-generated/resources/Patient-PacificPatientFijiITaukei.json ==
+INFORMATION: Patient/PacificPatientFijiITaukei: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/div/p/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+INFORMATION: Patient/PacificPatientFijiITaukei: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-clan-affiliation.html' at 'div/table/tr/td/a' for 'Pacific Clan Affiliation' is not a widely supported protocol and should be checked
+WARNING: Patient/PacificPatientFijiITaukei: Patient.identifier[0].system: No definition could be found for URL value 'http://health.gov.fj/fhir/identifier/nhi'
+== fsh-generated/resources/Patient-PacificPatientFijiIndo.json ==
+INFORMATION: Patient/PacificPatientFijiIndo: Patient.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/div/p/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+WARNING: Patient/PacificPatientFijiIndo: Patient.identifier[0].system: No definition could be found for URL value 'http://health.gov.fj/fhir/identifier/nhi'
+== fsh-generated/resources/Practitioner-PacificPractitionerExample.json ==
+INFORMATION: Practitioner/PacificPractitionerExample: Practitioner.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner.html' at 'div/div/p/a' for 'Pacific Practitioner' is not a widely supported protocol and should be checked
+ERROR: Practitioner/PacificPractitionerExample: Practitioner: The extension https://healthinfoservices.net/pacific-base-ig/StructureDefinition/pacific-clan-affiliation is not allowed to be used at this point (this element is [Practitioner]; allowed for this version = e:Patient)
+WARNING: Practitioner/PacificPractitionerExample: Practitioner.identifier[0].system: No definition could be found for URL value 'http://health.gov.ws/practitioner-registration'
+== fsh-generated/resources/PractitionerRole-PacificPractitionerRoleExample.json ==
+INFORMATION: PractitionerRole/PacificPractitionerRoleExample: PractitionerRole.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner-role.html' at 'div/div/p/a' for 'Pacific Practitioner Role' is not a widely supported protocol and should be checked
+== fsh-generated/resources/StructureDefinition-FijiAllergyIntolerance.json ==
+INFORMATION: StructureDefinition/FijiAllergyIntolerance: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-PacificAllergyIntolerance.html' at 'div/table/tr/td/a' for 'PacificAllergyIntolerance' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/FijiAllergyIntolerance: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/table/tr/td/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/FijiAllergyIntolerance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiAllergyIntolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-FijiCondition.json ==
+INFORMATION: StructureDefinition/FijiCondition: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-PacificCondition.html' at 'div/table/tr/td/a' for 'PacificCondition' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/FijiCondition: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/table/tr/td/a' for 'Pacific Patient' is not a widely supported protocol and should be checked
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiCondition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-FijiOrganization.json ==
+INFORMATION: StructureDefinition/FijiOrganization: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-PacificOrganization.html' at 'div/table/tr/td/a' for 'PacificOrganization' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/FijiOrganization: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-address.html' at 'div/table/tr/td/a' for 'PacificAddress' is not a widely supported protocol and should be checked
+WARNING: StructureDefinition/FijiOrganization: StructureDefinition.snapshot.element[21].binding: The definition for the element 'Organization.contact.purpose' binds to the value set 'http://hl7.org/fhir/ValueSet/contactentity-type|4.3.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/FijiOrganization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fiji-patient.json ==
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html' at 'div/table/tr/td/a' for 'PacificPatient' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner.html' at 'div/table/tr/td/a' for 'Pacific Practitioner' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner-role.html' at 'div/table/tr/td/a' for 'Pacific Practitioner Role' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-PacificOrganization.html' at 'div/table/tr/td/a' for 'PacificOrganization' is not a widely supported protocol and should be checked
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fiji-practitioner.json ==
+INFORMATION: StructureDefinition/fiji-practitioner: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner.html' at 'div/table/tr/td/a' for 'PacificPractitioner' is not a widely supported protocol and should be checked
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fiji-practitioner-role.json ==
+INFORMATION: StructureDefinition/fiji-practitioner-role: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner-role.html' at 'div/table/tr/td/a' for 'PacificPractitionerRole' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/fiji-practitioner-role: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-practitioner.html' at 'div/table/tr/td/a' for 'Pacific Practitioner' is not a widely supported protocol and should be checked
+INFORMATION: StructureDefinition/fiji-practitioner-role: StructureDefinition.text.div: Hyperlink scheme 'file' in 'file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-PacificOrganization.html' at 'div/table/tr/td/a' for 'PacificOrganization' is not a widely supported protocol and should be checked
+WARNING: StructureDefinition/fiji-practitioner-role: StructureDefinition.snapshot.element[15].binding: The definition for the element 'PractitionerRole.specialty' binds to the value set 'http://hl7.org/fhir/ValueSet/c80-practice-codes|4.3.0' which is experimental, but this structure is not labeled as experimental
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/fiji-practitioner-role'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-pacific-address-island.json ==
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-address-island'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-pacific-address-village.json ==
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-address-village'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-pacific-clan-affiliation.json ==
+WARNING: StructureDefinition.where(url = 'https://healthinfoservices.net/fiji-core-ig/StructureDefinition/pacific-clan-affiliation'): The Implementation Guide contains no examples for this extension

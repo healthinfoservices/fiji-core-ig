@@ -1,0 +1,57 @@
+# PacificPatientExample2 - Fiji Core FHIR Implementation Guide v1.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **PacificPatientExample2**
+
+## Example Patient: PacificPatientExample2
+
+Profile: [Pacific Patient](file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-patient.html)
+
+Susuga Tui Male, DoB: 1985-11-02 ( http://health.example.org/fhir/identifier#987654321)
+
+-------
+
+| | |
+| :--- | :--- |
+| Alt. Name: | Tevita Kalo(Official) |
+| [Pacific Clan Affiliation](file:///home/runner/work/pacific-base-ig/pacific-base-ig/output/StructureDefinition-pacific-clan-affiliation.html) | Sa Malietoa |
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Patient",
+  "id" : "PacificPatientExample2",
+  "meta" : {
+    "profile" : ["https://healthinfoservices.net/pacific-base-ig/StructureDefinition/pacific-patient"]
+  },
+  "extension" : [{
+    "url" : "https://healthinfoservices.net/pacific-base-ig/StructureDefinition/pacific-clan-affiliation",
+    "valueCodeableConcept" : {
+      "text" : "Sa Malietoa"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://health.example.org/fhir/identifier",
+    "value" : "987654321"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Tevita Kalo",
+    "family" : "Kalo",
+    "given" : ["Tevita"]
+  },
+  {
+    "use" : "usual",
+    "text" : "Susuga Tui",
+    "given" : ["Tui"],
+    "prefix" : ["Susuga"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1985-11-02"
+}
+
+```
