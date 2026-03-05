@@ -7,7 +7,7 @@
 
 ## Overview
 
-This is a FHIR Implementation Guide (IG) for Fiji Core FHIR Interoperability.  It inherits and extends the profiles defined in the regional Pacific Base IG (which is intended to provide a common set of profiles for national IG's of Pacific nations).  
+(2026-03-06 8:42) This is a FHIR Implementation Guide (IG) for Fiji Core FHIR Interoperability.  It inherits and extends the profiles defined in the regional Pacific Base IG (which is intended to provide a common set of profiles for national IG's of Pacific nations).  
 
 The Fiji Core IG is designed to define standards for exchange of healthcare information within the Fiji national context,  including specific profile constraints and extension,  and valuesets for coded concepts.
 
